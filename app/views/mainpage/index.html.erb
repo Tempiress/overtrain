@@ -1,0 +1,66 @@
+<div class="wrapper">
+  <header class="header">
+
+    <div class="leftHeader">
+      <%= image_tag "logo.png", Class: "logo_img" %>
+      <h1 class="logoText" >OverTrain</h1>
+    </div>
+
+    <div class="rightHeader">
+      <p><a href="/">about</a></p>
+      <p><a href="/">FAQ</a></p>
+    </div>
+
+  </header>
+
+
+  <form class="search">
+    <input type="text" placeholder="Искать здесь..." class="search_field">
+    <button  type="submit" class="submit"><i class="fa fa-search"></i></button>
+  </form>
+
+  <div class="content">
+
+    <div class="heroes">
+      <p><a href="/">Tank</a></p>
+      <p><a href="/">Flash</a></p>
+      <p><a href="/">Solider</a></p>
+      <p><a href="/">CyberMan</a></p>
+    </div>
+
+    <div class="maps">
+      <p><a href="/">Mercury</a></p>
+      <p><a href="/">Moon</a></p>
+      <p><a href="/">Earth</a></p>
+      <p><a href="/">Mars</a></p>
+    </div>
+
+    <div class="game_modes">
+      <p><a href="/">Bedus</a></p>
+      <p><a href="/">Board</a></p>
+      <p><a href="/">God</a></p>
+      <p><a href="/">Lores</a></p>
+    </div>
+
+
+
+
+  </div>
+
+
+  <div style="color: #7BA7AB" >
+
+    <tr>
+      <% @arr.each do |elem| %>
+        <td><%= elem %></td>
+      <% end %>
+
+    </tr>
+
+
+
+  </div>
+
+
+
+</div>
