@@ -1,17 +1,4 @@
-<div class="wrapper">
-  <header class="header">
 
-    <div class="leftHeader">
-      <%= image_tag "logo.png", Class: "logo_img" %>
-      <h1 class="logoText" >OverTrain</h1>
-    </div>
-
-    <div class="rightHeader">
-      <p><a href="/">about</a></p>
-      <p><a href="/">FAQ</a></p>
-    </div>
-
-  </header>
 
 
   <form class="search">
@@ -23,7 +10,7 @@
 
     <div class="heroes">
       <% @heroes.each do |hero|  %>
-      <p><a href="/"><%= hero.name %>(<%= hero.role %>)</a></p>
+        <%= link_to hero.name, hero_path(hero.key) %>
       <% end %>
     </div>
 
@@ -62,6 +49,3 @@
 
   </div>
 
-
-
-</div>
