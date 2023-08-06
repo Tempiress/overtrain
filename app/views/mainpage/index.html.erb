@@ -22,15 +22,16 @@
   <div class="content">
 
     <div class="heroes">
-      <p><a href="/">Tank</a></p>
-      <p><a href="/">Flash</a></p>
-      <p><a href="/">Solider</a></p>
-      <p><a href="/">CyberMan</a></p>
+      <% @heroes.each do |hero|  %>
+      <p><a href="/"><%= hero.name %>(<%= hero.role %>)</a></p>
+      <% end %>
     </div>
 
     <div class="maps">
       <p><a href="/">Mercury</a></p>
       <p><a href="/">Moon</a></p>
+      <p><a href="/">Earth</a></p>
+      <p><a href="/">Mars</a></p>
       <p><a href="/">Earth</a></p>
       <p><a href="/">Mars</a></p>
     </div>

@@ -86,9 +86,9 @@ a{
 
 
 .maps, .heroes, .game_modes{
-    width: 250px;
+    width: 270px;
     background: rgba(150, 217, 248, 0.89);
-    height: 300px;
+    height: 100%;
     border: 1px solid #888880;
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .5), inset 0 1px rgba(255, 255, 255, .3), inset 0 10px rgba(255, 255, 255, .2), inset 0 10px 20px rgba(255, 255, 255, .25), inset 0 -15px 30px rgba(0, 0, 0, .1);
